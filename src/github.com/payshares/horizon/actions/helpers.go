@@ -6,7 +6,7 @@ import (
 	"strconv"
 
 	"github.com/payshares/go/amount"
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/go/support/errors"
 	"github.com/payshares/go/xdr"
 	"github.com/payshares/horizon/assets"
@@ -186,7 +186,7 @@ func (base *Base) GetAddress(name string) (result string) {
 
 	result = base.GetString(name)
 
-	_, err := strkey.Decode(strkey.VersionByteAccountID, result)
+	_, err := psrkey.Decode(psrkey.VersionByteAccountID, result)
 
 	if err != nil {
 		base.SetInvalidField(name, err)
@@ -198,7 +198,7 @@ func (base *Base) GetAddress(name string) (result string) {
 // GetAccountID retireves an xdr.AccountID by attempting to decode a payshares
 // address at the provided name.
 func (base *Base) GetAccountID(name string) (result xdr.AccountId) {
-	raw, err := strkey.Decode(strkey.VersionByteAccountID, base.GetString(name))
+	raw, err := psrkey.Decode(psrkey.VersionByteAccountID, base.GetString(name))
 
 	if base.Err != nil {
 		return

@@ -1,7 +1,7 @@
 package horizon
 
 import (
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/horizon/friendbot"
 )
 
@@ -11,7 +11,7 @@ func initFriendbot(app *App) {
 	}
 
 	// ensure its a seed if its not blank
-	strkey.MustDecode(strkey.VersionByteSeed, app.config.FriendbotSecret)
+	psrkey.MustDecode(psrkey.VersionByteSeed, app.config.FriendbotSecret)
 
 	app.friendbot = &friendbot.Bot{
 		Secret:    app.config.FriendbotSecret,

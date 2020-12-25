@@ -2,7 +2,7 @@ package txsub
 
 import (
 	"github.com/payshares/go/build"
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/go/xdr"
 	"golang.org/x/net/context"
 )
@@ -34,7 +34,7 @@ func extractEnvelopeInfo(ctx context.Context, env string, passphrase string) (re
 	result.Sequence = uint64(tx.Tx.SeqNum)
 
 	aid := tx.Tx.SourceAccount.MustEd25519()
-	result.SourceAddress, err = strkey.Encode(strkey.VersionByteAccountID, aid[:])
+	result.SourceAddress, err = psrkey.Encode(psrkey.VersionByteAccountID, aid[:])
 
 	return
 }

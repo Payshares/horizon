@@ -1,7 +1,7 @@
 package simplepath
 
 import (
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/go/xdr"
 )
 
@@ -15,7 +15,7 @@ func makeAsset(typ xdr.AssetType, code string, issuer string) xdr.Asset {
 	an := xdr.AssetAlphaNum4{}
 	copy(an.AssetCode[:], code[:])
 
-	raw := strkey.MustDecode(strkey.VersionByteAccountID, issuer)
+	raw := psrkey.MustDecode(psrkey.VersionByteAccountID, issuer)
 	var key xdr.Uint256
 	copy(key[:], raw)
 

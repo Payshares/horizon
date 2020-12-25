@@ -4,7 +4,7 @@ package core
 
 import (
 	"github.com/guregu/null"
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/go/support/db"
 	"github.com/payshares/go/xdr"
 )
@@ -140,7 +140,7 @@ func AssetFromDB(typ xdr.AssetType, code string, issuer string) (result xdr.Asse
 		)
 
 		copy(an.AssetCode[:], []byte(code))
-		decoded, err = strkey.Decode(strkey.VersionByteAccountID, issuer)
+		decoded, err = psrkey.Decode(psrkey.VersionByteAccountID, issuer)
 		if err != nil {
 			return
 		}
@@ -159,7 +159,7 @@ func AssetFromDB(typ xdr.AssetType, code string, issuer string) (result xdr.Asse
 		)
 
 		copy(an.AssetCode[:], []byte(code))
-		decoded, err = strkey.Decode(strkey.VersionByteAccountID, issuer)
+		decoded, err = psrkey.Decode(psrkey.VersionByteAccountID, issuer)
 		if err != nil {
 			return
 		}

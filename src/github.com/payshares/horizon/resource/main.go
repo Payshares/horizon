@@ -5,7 +5,7 @@ package resource
 import (
 	"time"
 
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/go/support/errors"
 	"github.com/payshares/horizon/db2/history"
 	"github.com/payshares/horizon/render/hal"
@@ -15,13 +15,13 @@ import (
 	"golang.org/x/net/context"
 )
 
-// KeyTypeNames maps from strkey version bytes into json string values to use in
+// KeyTypeNames maps from psrkey version bytes into json string values to use in
 // horizon responses.
-var KeyTypeNames = map[strkey.VersionByte]string{
-	strkey.VersionByteAccountID: "ed25519_public_key",
-	strkey.VersionByteSeed:      "ed25519_secret_seed",
-	strkey.VersionByteHashX:     "sha256_hash",
-	strkey.VersionByteHashTx:    "preauth_tx",
+var KeyTypeNames = map[psrkey.VersionByte]string{
+	psrkey.VersionByteAccountID: "ed25519_public_key",
+	psrkey.VersionByteSeed:      "ed25519_secret_seed",
+	psrkey.VersionByteHashX:     "sha256_hash",
+	psrkey.VersionByteHashTx:    "preauth_tx",
 }
 
 // Account is the summary of an account
@@ -280,11 +280,11 @@ func NewOperation(
 	return operations.New(ctx, row, ledger)
 }
 
-// KeyTypeFromAddress converts the version byte of the provided strkey encoded
+// KeyTypeFromAddress converts the version byte of the provided psrkey encoded
 // value (for example an account id or a signer key) and returns the appropriate
 // horizon-specific type name.
 func KeyTypeFromAddress(address string) (string, error) {
-	vb, err := strkey.Version(address)
+	vb, err := psrkey.Version(address)
 	if err != nil {
 		return "", errors.Wrap(err, "invalid address")
 	}

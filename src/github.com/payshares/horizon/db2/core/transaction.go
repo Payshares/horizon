@@ -8,7 +8,7 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 	"github.com/guregu/null"
-	"github.com/payshares/go/strkey"
+	"github.com/payshares/go/psrkey"
 	"github.com/payshares/go/xdr"
 	"github.com/payshares/horizon/utf8"
 )
@@ -117,14 +117,14 @@ func (tx *Transaction) Sequence() int64 {
 	return int64(tx.Envelope.Tx.SeqNum)
 }
 
-// SourceAddress returns the strkey-encoded account id that paid the fee for
+// SourceAddress returns the psrkey-encoded account id that paid the fee for
 // `tx`.
 func (tx *Transaction) SourceAddress() string {
 	sa := tx.Envelope.Tx.SourceAccount
 	pubkey := sa.MustEd25519()
 	raw := make([]byte, 32)
 	copy(raw, pubkey[:])
-	return strkey.MustEncode(strkey.VersionByteAccountID, raw)
+	return psrkey.MustEncode(psrkey.VersionByteAccountID, raw)
 }
 
 // TransactionByHash is a query that loads a single row from the `txhistory`.
