@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'stellar_core_commander', github: 'stellar/stellar_core_commander', branch: 'master'
+gem 'payshares_core_commander', github: 'payshares/payshares_core_commander', branch: 'master'
 
 gem 'pry'

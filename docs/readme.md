@@ -2,19 +2,19 @@
 title: Horizon
 ---
 
-Horizon is the server for the client facing API for the Stellar ecosystem.  It acts as the interface between [stellar-core](https://www.stellar.org/developers/learn/stellar-core) and applications that want to access the Stellar network. It allows you to submit transactions to the network, check the status of accounts, subscribe to event streams, etc. See [an overview of the Stellar ecosystem](https://www.stellar.org/developers/guides/) for more details.
+Horizon is the server for the client facing API for the Payshares ecosystem.  It acts as the interface between [payshares-core](https://www.payshares.org/developers/learn/payshares-core) and applications that want to access the Payshares network. It allows you to submit transactions to the network, check the status of accounts, subscribe to event streams, etc. See [an overview of the Payshares ecosystem](https://www.payshares.org/developers/guides/) for more details.
 
-You can interact directly with horizon via curl or a web browser but SDF provides a [JavaScript SDK](https://www.stellar.org/developers/js-stellar-sdk/learn/) for clients to use to interact with Horizon.
+You can interact directly with horizon via curl or a web browser but SDF provides a [JavaScript SDK](https://www.payshares.org/developers/js-payshares-sdk/learn/) for clients to use to interact with Horizon.
 
-SDF runs a instance of Horizon that is connected to the test net [https://horizon-testnet.stellar.org/](https://horizon-testnet.stellar.org/).
+SDF runs a instance of Horizon that is connected to the test net [https://horizon-testnet.payshares.org/](https://horizon-testnet.payshares.org/).
 
 ## Libraries
 
 SDF maintained libraries:<br />
-- [JavaScript](https://github.com/stellar/js-stellar-sdk)
-- [Java](https://github.com/stellar/java-stellar-sdk)
-- [Go](https://github.com/stellar/go)
+- [JavaScript](https://github.com/payshares/js-payshares-sdk)
+- [Java](https://github.com/payshares/java-payshares-sdk)
+- [Go](https://github.com/payshares/go)
 
 Community maintained libraries (in various states of completeness) for interacting with Horizon in other languages:<br>
-- [Ruby](https://github.com/stellar/ruby-stellar-sdk)
-- [Python](https://github.com/StellarCN/py-stellar-base)
+- [Ruby](https://github.com/payshares/ruby-payshares-sdk)
+- [Python](https://github.com/PaysharesCN/py-payshares-base)

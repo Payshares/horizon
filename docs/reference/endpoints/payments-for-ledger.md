@@ -1,7 +1,7 @@
 ---
 title: Payments for Ledger
 clientData:
-  laboratoryUrl: https://www.stellar.org/laboratory/#explorer?resource=payments&endpoint=for_ledger
+  laboratoryUrl: https://www.payshares.org/laboratory/#explorer?resource=payments&endpoint=for_ledger
 ---
 
 This endpoint represents all payment [operations](../resources/operation.md) that are part of a valid [transactions](../resources/transaction.md) in a given [ledger](../resources/ledger.md).
@@ -24,14 +24,14 @@ GET /ledgers/{id}/payments{?cursor,limit,order}
 ### curl Example Request
 
 ```sh
-curl "https://horizon-testnet.stellar.org/ledgers/69859/payments"
+curl "https://horizon-testnet.payshares.org/ledgers/69859/payments"
 ```
 
 ### JavaScript Example Request
 
 ```js
-var StellarSdk = require('stellar-sdk')
-var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+var PaysharesSdk = require('payshares-sdk')
+var server = new PaysharesSdk.Server('https://horizon-testnet.payshares.org');
 
 server.payments()
   .forLedger("10866")

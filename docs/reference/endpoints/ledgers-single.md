@@ -1,7 +1,7 @@
 ---
 title: Ledger Details
 clientData:
-  laboratoryUrl: https://www.stellar.org/laboratory/#explorer?resource=ledgers&endpoint=single
+  laboratoryUrl: https://www.payshares.org/laboratory/#explorer?resource=ledgers&endpoint=single
 ---
 
 The ledger details endpoint provides information on a single [ledger](../resources/ledger.md).
@@ -21,14 +21,14 @@ GET /ledgers/{sequence}
 ### curl Example Request
 
 ```sh
-curl "https://horizon-testnet.stellar.org/ledgers/69859"
+curl "https://horizon-testnet.payshares.org/ledgers/69859"
 ```
 
 ### JavaScript Example Request
 
 ```js
-var StellarSdk = require('stellar-sdk')
-var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+var PaysharesSdk = require('payshares-sdk')
+var server = new PaysharesSdk.Server('https://horizon-testnet.payshares.org');
 
 server.ledgers()
   .ledger('69858')

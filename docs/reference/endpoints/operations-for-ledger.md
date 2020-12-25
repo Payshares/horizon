@@ -1,7 +1,7 @@
 ---
 title: Operations for Ledger
 clientData:
-  laboratoryUrl: https://www.stellar.org/laboratory/#explorer?resource=operations&endpoint=for_ledger
+  laboratoryUrl: https://www.payshares.org/laboratory/#explorer?resource=operations&endpoint=for_ledger
 ---
 
 This endpoint returns all [operations](../resources/operation.md) that occurred in a given [ledger](../resources/ledger.md).
@@ -24,14 +24,14 @@ GET /ledgers/{id}/operations{?cursor,limit,order}
 ### curl Example Request
 
 ```sh
-curl "https://horizon-testnet.stellar.org/ledgers/69859/operations"
+curl "https://horizon-testnet.payshares.org/ledgers/69859/operations"
 ```
 
 ### JavaScript Example Request
 
 ```js
-var StellarSdk = require('stellar-sdk');
-var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
+var PaysharesSdk = require('payshares-sdk');
+var server = new PaysharesSdk.Server('https://horizon-testnet.payshares.org');
 
 server.operations()
   .forLedger("10866")

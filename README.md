@@ -1,17 +1,17 @@
 # Horizon
-[![Build Status](https://travis-ci.org/stellar/horizon.svg?branch=master)](https://travis-ci.org/stellar/horizon)
+[![Build Status](https://travis-ci.org/payshares/horizon.svg?branch=master)](https://travis-ci.org/payshares/horizon)
 
-Horizon is the [client facing API](/docs) server for the Stellar ecosystem.  It acts as the interface between stellar-core and applications that want to access the Stellar network. It allows you to submit transactions to the network, check the status of accounts, subscribe to event streams, etc. See [an overview of the Stellar ecosystem](https://www.stellar.org/developers/guides/get-started/) for more details.
+Horizon is the [client facing API](/docs) server for the Payshares ecosystem.  It acts as the interface between payshares-core and applications that want to access the Payshares network. It allows you to submit transactions to the network, check the status of accounts, subscribe to event streams, etc. See [an overview of the Payshares ecosystem](https://www.payshares.org/developers/guides/get-started/) for more details.
 
 ## Downloading the server
-[Prebuilt binaries](https://github.com/stellar/horizon/releases) of horizon are available on the 
-[releases page](https://github.com/stellar/horizon/releases).
+[Prebuilt binaries](https://github.com/payshares/horizon/releases) of horizon are available on the 
+[releases page](https://github.com/payshares/horizon/releases).
 
 | Platform       | Binary file name                                                                         |
 |----------------|------------------------------------------------------------------------------------------|
-| Mac OSX 64 bit | [horizon-darwin-amd64](https://github.com/stellar/horizon/releases/download/v0.11.0/horizon-v0.11.0-darwin-amd64.tar.gz)      |
-| Linux 64 bit   | [horizon-linux-amd64](https://github.com/stellar/horizon/releases/download/v0.11.0/horizon-v0.11.0-linux-amd64.tar.gz)       |
-| Windows 64 bit | [horizon-windows-amd64.exe](https://github.com/stellar/horizon/releases/download/v0.11.0/horizon-v0.11.0-windows-amd64.zip) |
+| Mac OSX 64 bit | [horizon-darwin-amd64](https://github.com/payshares/horizon/releases/download/v0.11.0/horizon-v0.11.0-darwin-amd64.tar.gz)      |
+| Linux 64 bit   | [horizon-linux-amd64](https://github.com/payshares/horizon/releases/download/v0.11.0/horizon-v0.11.0-linux-amd64.tar.gz)       |
+| Windows 64 bit | [horizon-windows-amd64.exe](https://github.com/payshares/horizon/releases/download/v0.11.0/horizon-v0.11.0-windows-amd64.zip) |
 
 Alternatively, you can [build](#building) the binary yourself.
 

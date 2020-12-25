@@ -416,8 +416,8 @@
 			"branch": "master"
 		},
 		{
-			"importpath": "github.com/stellar/go",
-			"repository": "https://github.com/stellar/go",
+			"importpath": "github.com/payshares/go",
+			"repository": "https://github.com/payshares/go",
 			"revision": "165d0af4cb611d438a618b2ef14ea935505908e3",
 			"branch": "master"
 		},
