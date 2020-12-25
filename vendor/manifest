@@ -418,7 +418,7 @@
 		{
 			"importpath": "github.com/payshares/go",
 			"repository": "https://github.com/payshares/go",
-			"revision": "165d0af4cb611d438a618b2ef14ea935505908e3",
+			"revision": "f97d9148920868ebbe8638423808163a39f704ef",
 			"branch": "master"
 		},
 		{

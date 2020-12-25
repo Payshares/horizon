@@ -60,7 +60,7 @@ As you will see if you run the command above, horizon defines a large number of 
 |-------------------------|-----------------------------|--------------------------------------|
 | `--db-url`              | `DATABASE_URL`              | postgres://localhost/horizon_testnet |
 | `--payshares-core-db-url` | `PAYSHARES_CORE_DATABASE_URL` | postgres://localhost/core_testnet    |
-| `--payshares-core-url`    | `PAYSHARES_CORE_URL`          | http://localhost:11626               |
+| `--payshares-core-url`    | `PAYSHARES_CORE_URL`          | http://localhost:11757               |
 
 `--db-url` specifies the horizon database, and its value should be a valid [PostgreSQL Connection URI](http://www.postgresql.org/docs/9.2/static/libpq-connect.html#AEN38419).  `--payshares-core-db-url` specifies a payshares-core database which will be used to load data about the payshares ledger.  Finally, `--payshares-core-url` specifies the HTTP control port for an instance of payshares-core.  This URL should be associated with the payshares-core that is writing to the database at `--payshares-core-db-url`.
 
