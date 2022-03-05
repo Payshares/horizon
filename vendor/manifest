@@ -562,26 +562,26 @@
 			"path": "/publicsuffix"
 		},
 		{
-			"importpath": "github.com/gavv/httpexpect",
-			"repository": "https://github.com/gavv/httpexpect",
+			"importpath": "gopkg.in/gavv/httpexpect.v1",
+			"repository": "https://gopkg.in/gavv/httpexpect.v1",
 			"revision": "47bd51a8ce805ecbcb766a00041d5dc2fd4a23a8",
 			"branch": "v1"
 		},
 		{
-			"importpath": "github.com/go-gorp/gorp",
-			"repository": "https://github.com/go-gorp/gorp",
+			"importpath": "gopkg.in/gorp.v1",
+			"repository": "https://gopkg.in/gorp.v1",
 			"revision": "c87af80f3cc5036b55b83d77171e156791085e2e",
 			"branch": "master"
 		},
 		{
-			"importpath": "github.com/tylerstillwater/graceful",
-			"repository": "https://github.com/tylerstillwater/graceful",
+			"importpath": "gopkg.in/tylerb/graceful.v1",
+			"repository": "https://gopkg.in/tylerb/graceful.v1",
 			"revision": "119c58e176bce26fd40698146d9a106c8f1723a5",
 			"branch": "master"
 		},
 		{
-			"importpath": "github.com/go-yaml/yaml",
-			"repository": "https://github.com/go-yaml/yaml",
+			"importpath": "gopkg.in/yaml.v2",
+			"repository": "https://gopkg.in/yaml.v2",
 			"revision": "7ad95dd0798a40da1ccdff6dff35fd177b5edf40",
 			"branch": "master"
 		}
